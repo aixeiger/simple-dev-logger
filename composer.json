@@ -1,0 +1,17 @@
+{
+	"name": "aixeiger/simple-dev-logger",
+	"type": "plugin",
+	"description": "Simple logger for Wordpress theme or plugin development",
+	"keywords": ["wordpress", "log", "logger", "development"],
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "Aixeiger",
+			"email": "drakgengard@gmail.com",
+			"role": "developer"
+		}
+	],
+	"require": {
+		"php" ">=7.4"
+	}
+}
