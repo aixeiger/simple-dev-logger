@@ -84,22 +84,22 @@ class Application implements ArrayAccess{
 		return static::$instance;
 	}
 
-	public function offsetExists($key)
+	public function offsetExists(mixed $key): bool
 	{
 		return isset($this->bindings[$key]);
 	}
 
-	public function offsetGet($key)
+	public function offsetGet(mixed $key): mixed
 	{
 		return $this->bindings[$key];
 	}
 
-	public function offsetSet($key, $value)
+	public function offsetSet(mixed $key, mixed $value): void
 	{
-		static::getInstance()->bind($key, $value);
+		static::getInstance()->bind($key,$value);
 	}
 
-	public function offsetUnset($key)
+	public function offsetUnset(mixed $key): void
 	{
 		unset($this->bindings[$key]);
 	}
